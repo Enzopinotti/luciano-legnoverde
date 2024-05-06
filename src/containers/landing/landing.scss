@@ -1,0 +1,48 @@
+#landing {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10% 4%;
+  background: url("../../assets/images/domain/textura.jpg");
+  min-height: 100dvh;
+
+  .landing_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    img {
+      margin-top: 40px;
+      max-width: 335px;
+      border-radius: 50%;
+    }
+
+    h1 {
+      color: var(--text-main);
+      font-size: 27px;
+      margin-top: 20px;
+      padding: 10px;
+      span {
+        border-bottom: 1px solid #c3c3c3;
+      }
+    }
+
+    h4 {
+      text-transform: uppercase;
+      font-weight: 500;
+      color: var(--text-main);
+    }
+
+    .main-button {
+      margin: 70px 0;
+      text-transform: capitalize;
+      background: var(--bg-color-main);
+      padding: 14px 70px;
+      font-size: 23px;
+    }
+  }
+}

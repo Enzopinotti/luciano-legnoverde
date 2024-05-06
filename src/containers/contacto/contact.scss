@@ -1,0 +1,190 @@
+#contact_view {
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+
+  .container_intro_section {
+    margin-top: 120px !important;
+    p {
+      margin-bottom: 64px !important;
+    }
+  }
+
+  .form_container {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+
+    .form_contact {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+
+      .form-input {
+        width: 100%;
+        max-width: 850px;
+        min-width: 322px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 12px;
+        position: relative;
+
+        label {
+          color: var(--bg-color-main, #19223d);
+          font-size: 16px;
+          font-weight: 500;
+          letter-spacing: -0.485px;
+        }
+        input {
+          width: 100%;
+          border-radius: 12px;
+          border: none;
+          outline: none;
+          border: 0.5px solid var(--bg-color-main, #101425);
+          padding: 12px;
+          font-size: 16px;
+        }
+        textarea {
+          width: 100%;
+          border: none;
+          outline: none;
+          min-height: 250px;
+          border: 0.5px solid var(--bg-color-main, #101425);
+          border-radius: 12px;
+          padding: 12px;
+        }
+
+        .error {
+          color: red;
+          pointer-events: none;
+          font-size: 14px;
+        }
+      }
+
+      .flex-form_content {
+        width: 100%;
+        max-width: 850px;
+        min-width: 322px;
+        display: flex;
+        gap: 24px;
+        align-items: flex-start;
+
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+        }
+      }
+    }
+
+    button {
+      margin-bottom: 70px;
+    }
+  }
+
+  .contact_data {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 120px;
+    gap: 128px;
+
+    .data {
+      display: flex;
+      gap: 64px;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        color: var(--bg-color-main, #19223D);
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 32px;
+        text-transform: uppercase;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+        li {
+          display: flex;
+          a {
+            color: var(--bg-color-main);
+            text-decoration: none;
+            border-radius: 100px;
+            display: flex;
+            padding: 12px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid var(--lucianolegnoverde-com-ar-cyprus, #19223d);
+          }
+        }
+      }
+      .line {
+        position: absolute;
+        left: -5%;
+        bottom: -35px;
+        width: 35%;
+        height: 1px;
+        background: var(--bg-color-main);
+        opacity: 0.5;
+      }
+    }
+    .links_luciano {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 48px;
+
+      > .rrss {
+        display: flex;
+        a, span {
+          display: flex;
+          gap: 16px;
+          align-items: center;
+          justify-content: center;
+          color: var(--bg-color-main, #19223D);
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 32px; 
+          cursor: pointer;
+
+          .icon {
+            color: var(--bg-color-main);
+            font-size: 32px;
+          }
+        }
+      }
+    }
+  }
+
+  .arrow_contact {
+    position: absolute;
+    bottom: -15%;
+    right: -30px;
+    max-width: 400px;
+    object-fit: cover;
+    z-index: 0 !important;
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #contact_view {
+    .contact_data {
+      flex-direction: column;
+      .data {
+        justify-content: flex-start;
+        position: relative;
+        .line {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

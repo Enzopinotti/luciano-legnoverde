@@ -1,0 +1,20 @@
+// Variables
+$bg-color-main:                         #101425;
+$bg-color-secondary:                    #19223D;
+$bg-button:                             #0D688D;
+$text-lblue:                            #0D688D;
+$text-white:                            #FBFFFE;
+$text-main:                             #101425;
+$navbar-height:                              88px;
+
+:root {
+  --bg-color-main:                        #{$bg-color-main};
+  --bg-color-secondary:                   #{$bg-color-secondary};
+  --bg-button:                            #{$bg-button};
+  --text-white:                           #{$text-white};
+  --text-main:                            #{$text-main};
+  --text-lblue:                           #{$text-lblue};
+
+  // Dimensions
+  --navbar-height:                        #{$navbar-height};
+}

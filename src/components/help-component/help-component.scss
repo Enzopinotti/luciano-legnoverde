@@ -1,0 +1,84 @@
+.help_container  {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 120px 0;
+  position: relative;
+
+  .title {
+    color: var(--lucianolegnoverde-com-ar-cyprus, #19223D);
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .description {
+    color: var(--lucianolegnoverde-com-ar-cyprus, #19223D);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; 
+    margin-bottom: 40px;
+  }
+
+  .line {
+    width: 45%;
+    position: relative;
+    height: 2px;
+    background: var(--bg-color-main);
+    opacity: 0.5;
+    margin: 48px 0;
+  }
+
+  .flex-container {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+
+    .social-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span, a {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 16px;
+        color: var(--lucianolegnoverde-com-ar-cyprus, #19223D);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          background: var(--text-lblue);
+          height: 3px;
+          width: 0;
+          left: 0;
+          bottom: -10px;
+          transition: 0.3s;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .help_container {
+    .flex-container {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+}

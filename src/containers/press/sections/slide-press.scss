@@ -1,0 +1,123 @@
+#swiper_slide_press {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  min-height: 500px;
+  flex-direction: column;
+  gap: 64px;
+
+  .header_press {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    h2 {
+      color: var(--text-white);
+      font-size: 48px;
+      font-style: italic;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: var(--bg-color-main);
+      padding: 8px 24px;
+    }
+  }
+
+  .swiper_container-press {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .swiper {
+      position: inherit;
+      margin-left: 0;
+
+      .swiper-wrapper {
+        gap: 16px;
+        .swiper-slide {
+          flex-shrink: 1;
+          .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 16px;
+            position: relative;
+            width: 382px;
+  
+            img {
+              width: 100%;
+              object-fit: contain;
+            }
+            h2 {
+              color: var(--lucianolegnoverde-com-ar-cyprus, #19223D);
+              text-align: center;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 32px;
+              pointer-events: all;
+              padding: 0 7px;
+              span {
+                font-style: italic;
+              }
+            }
+            .img_container {
+              width: 100%;
+              position: relative;
+              overflow: hidden;
+              img {
+                width: 100%;
+              }
+              .play_hover {
+                position: absolute;
+                right: 0;
+                left: 0;
+                bottom: -100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0, 0, 0, 0.5);
+                transition: 0.5s ease-in-out;
+                height: 100%;
+                z-index: 88;
+
+                .icon {
+                  color: var(--text-white);
+                  font-size: 64px;
+                  cursor: pointer;
+                }
+                .external_link {
+                  color: var(--text-white);
+                  font-size: 20px;
+                  cursor: pointer;
+                  display: flex;
+                  text-transform: uppercase;
+                  gap: 5px;
+                  padding: 3px 0;
+                  &:hover {
+                    border-bottom: 2px solid var(--text-white);
+                  }
+                }
+              }
+
+              &:hover .play_hover {
+                bottom: 0px;
+                transition: 0.5s ease-in-out;
+                transition-delay: 0.2s;
+              }
+            }
+          }
+        }
+      }
+      .btn-container {
+        position: absolute;
+        top: 22px;
+        right: 0;
+      }
+    }
+
+  }
+}

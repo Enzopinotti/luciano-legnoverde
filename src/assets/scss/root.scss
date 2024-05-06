@@ -1,0 +1,62 @@
+// Global Styles & Config
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif !important;
+  // overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: var(--text-white);
+}
+
+textarea {
+  resize: none;
+}
+
+h1,h2,h3,
+h4, h5, h6,
+p, a, button,
+span, b, strong {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img, video {
+  max-width: 100%;
+}
+
+// Disabled Arrows Media Screen
+@media screen and (max-width: 1028px) {
+  .arrow_contact {
+    display: none !important;
+  }
+  .absolute_arrow-section {
+    display: none !important;
+  }
+  .workout {
+    display: none !important;
+  }
+  .arrow_right {
+    display: none !important;
+  }
+}

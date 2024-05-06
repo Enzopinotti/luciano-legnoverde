@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Luciano Legnoverde
+N:Legnoverde;Luciano ;;;
+item1.EMAIL;TYPE=INTERNET:lucianolegnoverde@gmail.com
+item1.X-ABLabel:
+item2.TEL:221 541-9000
+item2.X-ABLabel:
+item3.ORG:Luciano Legnoverde
+item3.X-ABLabel:
+item4.TITLE:Asesor financiero
+item4.X-ABLabel:
+CATEGORIES:ABES,myContacts
+END:VCARD

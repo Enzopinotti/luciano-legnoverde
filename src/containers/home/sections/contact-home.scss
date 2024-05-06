@@ -1,0 +1,96 @@
+#contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  background-image: url('../../../assets/images/domain/contacto.png');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  .contact_container {
+    width: 100%;
+    height: 100%;
+    padding: 106px 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .title{
+      color: var(--text-white);
+      font-size: 48px;
+      font-style: italic;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .description {
+      margin-top: 24px;
+      margin-bottom: 40px;
+      color: var(--text-white);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 32px;
+    }
+    .line {
+      margin: 48px 0;
+      width: 50%;
+      height: 2px;
+      opacity: 0.5;
+      background: var(--text-white);
+    }
+    .flex-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      margin-bottom: 120px;
+      .social-container a, span {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        color: var(--text-white);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          background: var(--text-white);
+          height: 3px;
+          width: 0;
+          left: 0;
+          bottom: -10px;
+          transition: 0.3s;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #contact {
+    background-image: url('../../../assets/images/domain/contact_mobile.png');
+    background-position: center;
+    background-size: cover;
+    .contact_container {
+      .flex-container {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      } 
+      .line {
+        width: 100%;
+      }
+    }
+  }
+}
