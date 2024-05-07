@@ -10,10 +10,10 @@ export const appConfig = {
   INSTAGRAM_URL: 'https://www.instagram.com/lucianolegnoverde/',
   YOUTUBE_URL: 'https://www.youtube.com/@lucianolegnoverde6858',
   EMAIL_API: {
-    SERVICE_ID: 'service_v9evy68',
-    EMAIL_CLIENT: 'geronimo.mercante@davinci.edu.ar',
-    TEMPLATE_ID: 'template_4ex4ffm',
-    PUBLIC_KEY: 'lN85Fqr6IfL8CKx74'
+    SERVICE_ID: '',
+    EMAIL_CLIENT: '',
+    TEMPLATE_ID: '',
+    PUBLIC_KEY: ''
   },
   INTERVIEW: {
     EVENT_WORLD: {
