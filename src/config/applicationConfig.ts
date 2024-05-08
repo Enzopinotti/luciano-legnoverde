@@ -16,7 +16,6 @@ export const appConfig = {
   },
   EMAIL_API: {
     SERVICE_ID: 'service_v9evy68',
-    EMAIL_CLIENT: 'geronimo.mercante@davinci.edu.ar',
     TEMPLATE_ID: 'template_4ex4ffm',
     PUBLIC_KEY: 'lN85Fqr6IfL8CKx74'
   },
