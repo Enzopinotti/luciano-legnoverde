@@ -15,10 +15,10 @@ export const appConfig = {
     THIRD: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fpdf%2FComo-actuamos-cuando-ganamos-o-perdemos-dinero.pdf?alt=media&token=53865df2-8439-4625-935a-69fb76cb1744"
   },
   EMAIL_API: {
-    SERVICE_ID: 'service_v9evy68',
-    EMAIL_CLIENT: 'geronimo.mercante@davinci.edu.ar',
-    TEMPLATE_ID: 'template_4ex4ffm',
-    PUBLIC_KEY: 'lN85Fqr6IfL8CKx74'
+    SERVICE_ID: '',
+    EMAIL_CLIENT: '',
+    TEMPLATE_ID: '',
+    PUBLIC_KEY: ''
   },
   INTERVIEW: {
     EVENT_WORLD: {
