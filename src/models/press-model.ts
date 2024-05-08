@@ -1,4 +1,4 @@
-import { PressTypeEnum } from "../utils/enum";
+import { IndexPdfEnum, PressTypeEnum } from "../utils/enum";
 
 export interface PressModel {
   id: number;
@@ -7,6 +7,7 @@ export interface PressModel {
   externalLink: string;
   type: PressTypeEnum;
   descriptionItalic?: string;
+  pdfPath?: IndexPdfEnum;
 }
 
 export interface PressDomainModel {

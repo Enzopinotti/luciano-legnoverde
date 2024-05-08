@@ -1,17 +1,18 @@
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper/modules";
 import { motion } from "framer-motion";
 import { SwiperNavButton } from "../../../components/swiper/SwiperNavButton";
 import { PressDomainModel, PressModel } from "../../../models/press-model";
-
+import ModalVideo from '../../../components/modals/ModalComponent';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import "./slide-press.scss";
 import { FaRegCirclePlay } from 'react-icons/fa6';
-import { useState } from 'react';
-import ModalVideo from '../../../components/modals/ModalComponent';
-import { PressTypeEnum } from '../../../utils/enum';
 import { FaExternalLinkAlt } from 'react-icons/fa';
+import { IndexPdfEnum, PressTypeEnum } from '../../../utils/enum';
+import { appConfig } from '../../../config/applicationConfig';
+import { toast } from 'react-toastify';
 
 const SliderPress = ({ pressDetail } : { pressDetail: PressDomainModel }) => {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -22,8 +23,22 @@ const SliderPress = ({ pressDetail } : { pressDetail: PressDomainModel }) => {
     setModalOpen(true);
   };
 
-  const redirectToExternalLink = (pressItem: PressModel) => {
-    window.open(pressItem.externalLink, "_blank");
+  const showPdf = (pressItem: PressModel) => {
+    console.log(pressItem)
+    if (pressItem.pdfPath) {
+      switch (pressItem.pdfPath) {
+        case IndexPdfEnum.FIRST:
+          window.open(appConfig.PDF_LINKS.FIRST, "_blank");
+          break;
+        case IndexPdfEnum.SECOND:
+          window.open(appConfig.PDF_LINKS.SECOND, "_blank")
+          break; 
+        case IndexPdfEnum.THIRD:
+          window.open(appConfig.PDF_LINKS.THIRD, "_blank")
+      }
+    } else {
+      toast.error("El PDF no se encuentra disponible en este momento.");
+    }
   }
 
   const handleCloseModal = () => {
@@ -70,7 +85,7 @@ const SliderPress = ({ pressDetail } : { pressDetail: PressDomainModel }) => {
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                             transition={{ duration: 0.2 }}
-                            onClick={() => redirectToExternalLink(pressItem)}
+                            onClick={() => showPdf(pressItem)}
                             >
                             <p>
                               Leer {" "}

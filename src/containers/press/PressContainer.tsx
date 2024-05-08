@@ -4,14 +4,15 @@ import SliderPress from "./sections/SliderPress";
 import BannerComponent from "../../components/banner/BannerComponent";
 
 import "./press_container.scss";
-import arrowPressImage from "../../assets/images/press/press_arrow-section.svg"
-import arrowPressDownImage from "../../assets/images/press/press_arrow-section_down.svg"
+import arrowPressImage from "../../assets/images/press/press_arrow-section.svg";
+import arrowPressDownImage from "../../assets/images/press/press_arrow-section_down.svg";
 
 import { BannerPress } from "../../utils/BannerData";
 
 const PressContainer = () => {
-  const { pressInterview, pressNotes, pressArticles } = pressData;
-
+  const { pressInterview, pressArticles } = pressData;
+  // const { pressInterview, pressNotes, pressArticles } = pressData;
+  
   return (
     <>
       <BannerComponent banner={BannerPress} />
@@ -20,7 +21,7 @@ const PressContainer = () => {
         <img src={arrowPressDownImage} alt="arrow" className="arrow_press_down" />
         <div className="press_container">
           <SliderPress pressDetail={pressInterview} />
-          <SliderPress pressDetail={pressNotes} />
+          {/* <SliderPress pressDetail={pressNotes} /> */}
           <SliderPress pressDetail={pressArticles} />
         </div>
         <HelpComponent />

@@ -3,27 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 import './modal-video.scss';
 import { AiOutlineClose } from 'react-icons/ai';
-
-const dropIn = {
-  hidden: {
-    y: "-100vh",
-    opacity: 0,
-  },
-  visible: {
-    y: "0",
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-      type: "back",
-      damping: 25,
-      stiffness: 500,
-    },
-  },
-  exit: {
-    y: "100vh",
-    opacity: 0,
-  },
-};
+import { dropIn } from '../../utils/animations/dropIn';
 
 const ModalVideo = ({
   isOpen,

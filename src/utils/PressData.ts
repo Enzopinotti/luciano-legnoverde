@@ -1,5 +1,6 @@
 import { PressDomainModel } from "../models/press-model";
-import { PressTypeEnum } from "./enum";
+import { IndexPdfEnum, PressTypeEnum } from "./enum";
+
 
 const pressInterview: PressDomainModel = {
   title: "Charlas y entrevistas",
@@ -112,6 +113,7 @@ const pressArticles: PressDomainModel = {
       descriptionItalic: "El valor de las experiencias",
       externalLink: "",
       type: PressTypeEnum.ARTICLE,
+      pdfPath: IndexPdfEnum.FIRST,
       imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Farticle-1.png?alt=media&token=3779126d-4fd6-4eff-87bb-48c05c0bcf56",
     },
     {
@@ -119,6 +121,7 @@ const pressArticles: PressDomainModel = {
       description: "Yo vs mi otro Yo: ¿Quién decide?",
       externalLink: "",
       type: PressTypeEnum.ARTICLE,
+      pdfPath: IndexPdfEnum.SECOND,
       imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Farticle-2.png?alt=media&token=440cc54e-63da-4e53-b855-a4d016903592",
     },
     {
@@ -127,6 +130,7 @@ const pressArticles: PressDomainModel = {
       descriptionItalic: "¿Cómo actuamos cuando ganamos o perdemos dinero?",
       externalLink: "",
       type: PressTypeEnum.ARTICLE,
+      pdfPath: IndexPdfEnum.THIRD,
       imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Farticle-3.png?alt=media&token=d67ddfe3-fdbb-493c-955d-d42bdc5f8fd0",
     },
     {
@@ -135,6 +139,7 @@ const pressArticles: PressDomainModel = {
       descriptionItalic: "El valor de las experiencias",
       externalLink: "",
       type: PressTypeEnum.ARTICLE,
+      pdfPath: IndexPdfEnum.FIRST,
       imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Farticle-1.png?alt=media&token=3779126d-4fd6-4eff-87bb-48c05c0bcf56",
     },
     {
@@ -142,6 +147,7 @@ const pressArticles: PressDomainModel = {
       description: "Yo vs mi otro Yo: ¿Quién decide?",
       externalLink: "",
       type: PressTypeEnum.ARTICLE,
+      pdfPath: IndexPdfEnum.SECOND,
       imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Farticle-2.png?alt=media&token=440cc54e-63da-4e53-b855-a4d016903592",
     },
     {
@@ -150,6 +156,7 @@ const pressArticles: PressDomainModel = {
       descriptionItalic: "¿Cómo actuamos cuando ganamos o perdemos dinero?",
       externalLink: "",
       type: PressTypeEnum.ARTICLE,
+      pdfPath: IndexPdfEnum.THIRD,
       imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Farticle-3.png?alt=media&token=d67ddfe3-fdbb-493c-955d-d42bdc5f8fd0",
     },
   ],

@@ -9,6 +9,11 @@ export const appConfig = {
   FACEBOOK_URL: 'https://www.facebook.com/luciano.legnoverde',
   INSTAGRAM_URL: 'https://www.instagram.com/lucianolegnoverde/',
   YOUTUBE_URL: 'https://www.youtube.com/@lucianolegnoverde6858',
+  PDF_LINKS: {
+    FIRST: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fpdf%2FEl-valor-de-las-experiencias.pdf?alt=media&token=63cfed9c-7df1-4f7d-bdd5-4057d056c702",
+    SECOND: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fpdf%2Fyo-vs-mi-otro-yo.pdf?alt=media&token=154e803d-3058-4fd6-96db-155fbd8319ae",
+    THIRD: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fpdf%2FComo-actuamos-cuando-ganamos-o-perdemos-dinero.pdf?alt=media&token=53865df2-8439-4625-935a-69fb76cb1744"
+  },
   EMAIL_API: {
     SERVICE_ID: 'service_v9evy68',
     EMAIL_CLIENT: 'geronimo.mercante@davinci.edu.ar',
