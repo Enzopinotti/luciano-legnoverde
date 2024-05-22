@@ -24,7 +24,6 @@ const SliderPress = ({ pressDetail } : { pressDetail: PressDomainModel }) => {
   };
 
   const showPdf = (pressItem: PressModel) => {
-    console.log(pressItem)
     if (pressItem.pdfPath) {
       switch (pressItem.pdfPath) {
         case IndexPdfEnum.FIRST:
@@ -53,7 +52,23 @@ const SliderPress = ({ pressDetail } : { pressDetail: PressDomainModel }) => {
           <h2>{pressDetail.title}</h2>
         </div>
         <div className="swiper_container-press">
-          <Swiper navigation={true} modules={[Navigation]} className="mySwiper" slidesPerView={'auto'} loop={true}>
+          <Swiper 
+            navigation={true} 
+            modules={[Navigation]} 
+            className="mySwiper" 
+            slidesPerView={'auto'} 
+            loop={true}
+            breakpoints={{
+              540: {
+                slidesPerView: 'auto',
+                spaceBetween: 10,
+              },
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+              },
+            }}
+            >
             <div className="btn-container">
               <SwiperNavButton />
             </div>

@@ -122,3 +122,28 @@
 
   }
 }
+
+@media screen and (max-width: 520px) {
+  #swiper_slide_press {
+    min-height: auto;
+    .header_press h2 {
+      font-size: 19px;
+      text-wrap: nowrap;
+    }
+    .swiper_container-press {
+      .swiper {
+        .swiper-wrapper {
+          gap: 0px;
+          .swiper-slide {
+            .card {
+              width: 380px;
+            }
+          }
+        }
+        .btn-container {
+          top: 50px;
+        }
+      }
+    }
+  }
+}

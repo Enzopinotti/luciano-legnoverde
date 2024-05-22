@@ -4,8 +4,6 @@ import { useInView } from 'react-intersection-observer';
 
 import './service-home.scss';
 import { FaArrowRightLong } from 'react-icons/fa6';
-import { Link } from 'react-router-dom';
-import BtnWsp from '../../../components/button/BtnWsp';
 import { useWindowSize } from '../../../context/WindowsSizeProvider';
 import { sendMsgWhatsapp } from '../../../utils/WspMessage';
 import { appConfig } from '../../../config/applicationConfig';
@@ -49,8 +47,8 @@ const ServiceHome = () => {
         <div className="title_section">
           <h3 className='subtitle'>Mis Servicios</h3>
           <p className="description">
-            Accedé a múltiples servicios profesionales y a la atención personalizada que necesitás para  <br />
-            alcanzar tus objetivos financieros.
+            Accedé a múltiples <b>servicios profesionales</b> y a la atención personalizada que necesitás para  <br />
+            alcanzar tus <b>objetivos financieros</b>.
           </p>
         </div>
 
@@ -87,9 +85,8 @@ const ServiceHome = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex-between mt-32">
-              <Link to={"/finanzas-personales"} className="main-button fit-content">Conocé más</Link>
-              <BtnWsp />
+            <div className="flex-center mt-32">
+              <span onClick={() => sendMsgWhatsapp('Hola! Me contacto por el servicio de finanzas personales', appConfig.NUMBER_PHONE_WPS)} className="main-button fit-content"><MdWhatsapp style={{fontSize: '1.5rem'}} /> ¡Empecemos!</span>
             </div>
           </motion.div>
 
@@ -123,9 +120,8 @@ const ServiceHome = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex-between mt-32">
-              <Link to={"/finanzas-empresas"} className="main-button fit-content">Conocé más</Link>
-              <BtnWsp />
+            <div className="flex-center mt-32">
+              <span onClick={() => sendMsgWhatsapp('Hola! Me contacto por el servicio de finanzas para empresas', appConfig.NUMBER_PHONE_WPS)} className="main-button fit-content"><MdWhatsapp style={{fontSize: '1.5rem'}} /> ¡Empecemos!</span>
             </div>
           </motion.div>
 
@@ -158,16 +154,8 @@ const ServiceHome = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex-between mt-32">
-              <button 
-                className="main-button fit-content" 
-                onClick={() => sendMsgWhatsapp('¡Hola! Te consulto por la educación financiera', appConfig.NUMBER_PHONE_WPS)}
-                aria-label="contactame"
-                tabIndex={0}
-              >
-                <MdWhatsapp style={{ fontSize: '27px' }}/>
-                <p aria-label='contactame'>Contactame</p>
-              </button>
+            <div className="flex-center mt-32">
+              <span onClick={() => sendMsgWhatsapp('Hola! Me contacto por el servicio de educación financiera', appConfig.NUMBER_PHONE_WPS)} className="main-button fit-content"><MdWhatsapp style={{fontSize: '1.5rem'}} /> ¡Empecemos!</span>
             </div>
           </motion.div>
 

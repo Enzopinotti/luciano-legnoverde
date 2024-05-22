@@ -71,9 +71,7 @@
       }
 
       .tab_content {
-        max-width: 960px;
         display: flex;
-        overflow-x: scroll;
         align-items: center;
         padding: 10px 30px 20px 0;
         justify-content: flex-start;
@@ -81,6 +79,8 @@
         z-index: 3;
 
         .slide_container {
+          width: 100%;
+          max-width: 960px;
           display: flex;
           align-items: flex-start;
           justify-content: flex-start;
@@ -164,6 +164,24 @@
   }
 }
 
+@media screen and (max-width: 1417px) {
+  #press {
+    .arrow_right {
+      display: none !important;
+    }
+    .press_container {
+      .tab_container {
+        .tab_content {
+          .slide_container {
+            width: 100%;
+            max-width: 90vw;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1024px) {
   #press {
     .press_container {
@@ -189,6 +207,19 @@
       }
       .main-button {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #press {
+    .press_container {
+      .tab_container {
+        .tab_content {
+          width: 100%;
+          padding: 10px 0 10px 0;
+        }
       }
     }
   }

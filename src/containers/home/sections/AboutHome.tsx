@@ -97,7 +97,6 @@ const AboutHome = () => {
             </motion.a>
           </div>
         </motion.div>
-
         <img src={arrowImage} alt="Arrow image" className="absolute_arrow-section" />
       </div>
     </section>

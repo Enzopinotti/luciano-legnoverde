@@ -8,13 +8,13 @@ import './banner-home.scss';
 import workspaceImage from '../../../assets/images/home_presentation/workspace_premium.svg';
 import conferenceImage from '../../../assets/images/home_presentation/conference-room.svg';
 import personsImage from '../../../assets/images/home_presentation/persons.svg';
-import lucianoImage from '../../../assets/images/domain/luciano_face.png';
+import lucianoImage from '../../../assets/images/domain/luciano_face.webp';
 
 import socialFacebook from "../../../assets/images/rrss/facebook_dark.svg";
 import socialInstagram from "../../../assets/images/rrss/instagram_dark.svg";
 import socialLinkedin from "../../../assets/images/rrss/linkedin_dark.svg";
 
-import texturaBg from "../../../assets/images/domain/textura.jpg"
+import texturaBg from "../../../assets/images/domain/textura-webp.webp";
 
 const BannerHome = () => {
   const { ref: countRef, inView: countInView } = useInView();

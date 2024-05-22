@@ -113,6 +113,13 @@
   justify-content: space-between;
 }
 
+.flex-center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn_wsp-component {
   cursor: pointer;
   width: 32px;
