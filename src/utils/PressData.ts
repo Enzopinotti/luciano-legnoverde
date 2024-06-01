@@ -11,7 +11,7 @@ const pressInterview: PressDomainModel = {
       descriptionItalic: "Finanzas, de la imaginación a la realidad",
       externalLink: "https://www.youtube.com/embed/t_CaJKsyP6A?si=FDbO8ww-7Cl7YBb2",
       type: PressTypeEnum.VIDEO,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Finterview-2.png?alt=media&token=715458ad-c8fa-4d19-9992-02d08fc405fb",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Ffinanzas-img-realidad.png?alt=media&token=4f15e812-28e9-48d4-a705-b046cb1b89b7",
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const pressInterview: PressDomainModel = {
       descriptionItalic: "Economía al servicio de las personas",
       externalLink: "https://www.youtube.com/embed/8jSc6M5BOPQ?si=EWkQEGV-cMr2MtgZ",
       type: PressTypeEnum.VIDEO,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Finterview-1.png?alt=media&token=aaab1f92-8d86-4147-902d-7587b7535aa9",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Feconomia-svc-personas.png?alt=media&token=2027b4eb-2697-442b-a7ab-a8da5036c7bf",
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ const pressInterview: PressDomainModel = {
       descriptionItalic: "Emprendiendo en la incertidumbre",
       externalLink: "https://www.youtube.com/embed/AxQNdZjudJw?si=DfCMi5cIuDBfUoPo",
       type: PressTypeEnum.VIDEO,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Finterview-3.png?alt=media&token=6db6fed7-64d7-4b10-aefc-34fb53219677",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Femprendiendo-incertidumbre.png?alt=media&token=bd59b043-15f0-482f-84fd-b568f0b8c476",
     },
     {
       id: 4,
@@ -35,7 +35,7 @@ const pressInterview: PressDomainModel = {
       descriptionItalic: "Finanzas, de la imaginación a la realidad",
       externalLink: "https://www.youtube.com/embed/t_CaJKsyP6A?si=FDbO8ww-7Cl7YBb2",
       type: PressTypeEnum.VIDEO,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Finterview-2.png?alt=media&token=715458ad-c8fa-4d19-9992-02d08fc405fb",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Ffinanzas-img-realidad.png?alt=media&token=4f15e812-28e9-48d4-a705-b046cb1b89b7",
     },
     {
       id: 5,
@@ -43,7 +43,7 @@ const pressInterview: PressDomainModel = {
       descriptionItalic: "Economía al servicio de las personas",
       externalLink: "https://www.youtube.com/embed/8jSc6M5BOPQ?si=EWkQEGV-cMr2MtgZ",
       type: PressTypeEnum.VIDEO,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Finterview-1.png?alt=media&token=aaab1f92-8d86-4147-902d-7587b7535aa9",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Feconomia-svc-personas.png?alt=media&token=2027b4eb-2697-442b-a7ab-a8da5036c7bf",
     },
     {
       id: 6,
@@ -51,7 +51,7 @@ const pressInterview: PressDomainModel = {
       descriptionItalic: "Emprendiendo en la incertidumbre",
       externalLink: "https://www.youtube.com/embed/AxQNdZjudJw?si=DfCMi5cIuDBfUoPo",
       type: PressTypeEnum.VIDEO,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Finterview-3.png?alt=media&token=6db6fed7-64d7-4b10-aefc-34fb53219677",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Femprendiendo-incertidumbre.png?alt=media&token=bd59b043-15f0-482f-84fd-b568f0b8c476",
     },
   ],
 };
@@ -64,42 +64,42 @@ const pressNotes: PressDomainModel = {
       description: "El futuro de la salud: la manipulación de los genes para prevenir enfermedades",
       externalLink: "",
       type: PressTypeEnum.NOTE,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fnotes-1.png?alt=media&token=48d10fed-64e2-4e2c-b445-5e8ec1bdf7f7",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fel-futuro-de-la-salu.png?alt=media&token=8415919a-67fe-4eb2-8502-16504f1495d7",
     },
     {
       id: 2,
       description: "Mindcotine: ¡Dejá de fumar con esta app!",
       externalLink: "",
       type: PressTypeEnum.NOTE,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fnotes-2.png?alt=media&token=7a191685-da0c-4cb1-b0a7-aab714dd6f82",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fmindcotine-deja-de-fumar.png?alt=media&token=071eab3a-e23c-47f0-92c9-f99fe73c8734",
     },
     {
       id: 3,
       description: "Modesta: cuandola moda se recicla",
       externalLink: "",
       type: PressTypeEnum.NOTE,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fnotes-3.png?alt=media&token=e5490745-ddd2-4498-9d39-bf68cbaaf73e",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fmoda-se-recicla.png?alt=media&token=060ae7db-27fb-40a3-860e-e54db490335d",
     },
     {
       id: 4,
       description: "El futuro de la salud: la manipulación de los genes para prevenir enfermedades",
       externalLink: "",
       type: PressTypeEnum.NOTE,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fnotes-1.png?alt=media&token=48d10fed-64e2-4e2c-b445-5e8ec1bdf7f7",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fel-futuro-de-la-salu.png?alt=media&token=8415919a-67fe-4eb2-8502-16504f1495d7",
     },
     {
       id: 5,
       description: "Mindcotine: ¡Dejá de fumar con esta app!",
       externalLink: "",
       type: PressTypeEnum.NOTE,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fnotes-2.png?alt=media&token=7a191685-da0c-4cb1-b0a7-aab714dd6f82",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fmindcotine-deja-de-fumar.png?alt=media&token=071eab3a-e23c-47f0-92c9-f99fe73c8734",
     },
     {
       id: 6,
       description: "Modesta: cuandola moda se recicla",
       externalLink: "",
       type: PressTypeEnum.NOTE,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fnotes-3.png?alt=media&token=e5490745-ddd2-4498-9d39-bf68cbaaf73e",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fmoda-se-recicla.png?alt=media&token=060ae7db-27fb-40a3-860e-e54db490335d",
     },
   ],
 };
@@ -114,7 +114,7 @@ const pressArticles: PressDomainModel = {
       externalLink: "",
       type: PressTypeEnum.ARTICLE,
       pdfPath: IndexPdfEnum.FIRST,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Farticle-1.png?alt=media&token=3779126d-4fd6-4eff-87bb-48c05c0bcf56",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fel-valor-xp.png?alt=media&token=20a8676e-e036-49ac-8b40-9f8a117454e2",
     },
     {
       id: 2,
@@ -122,7 +122,7 @@ const pressArticles: PressDomainModel = {
       externalLink: "",
       type: PressTypeEnum.ARTICLE,
       pdfPath: IndexPdfEnum.SECOND,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Farticle-2.png?alt=media&token=440cc54e-63da-4e53-b855-a4d016903592",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fyo-vs-yo.png?alt=media&token=9867ac66-c286-44d3-a81d-87d664bd166a",
     },
     {
       id: 3,
@@ -131,7 +131,7 @@ const pressArticles: PressDomainModel = {
       externalLink: "",
       type: PressTypeEnum.ARTICLE,
       pdfPath: IndexPdfEnum.THIRD,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Farticle-3.png?alt=media&token=d67ddfe3-fdbb-493c-955d-d42bdc5f8fd0",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fcomo-actuamos-ganamos-o-perdemos.png?alt=media&token=203711f0-13bf-4190-9a87-86a9cae90128",
     },
     {
       id: 4,
@@ -140,7 +140,7 @@ const pressArticles: PressDomainModel = {
       externalLink: "",
       type: PressTypeEnum.ARTICLE,
       pdfPath: IndexPdfEnum.FIRST,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Farticle-1.png?alt=media&token=3779126d-4fd6-4eff-87bb-48c05c0bcf56",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fel-valor-xp.png?alt=media&token=20a8676e-e036-49ac-8b40-9f8a117454e2",
     },
     {
       id: 5,
@@ -148,7 +148,7 @@ const pressArticles: PressDomainModel = {
       externalLink: "",
       type: PressTypeEnum.ARTICLE,
       pdfPath: IndexPdfEnum.SECOND,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Farticle-2.png?alt=media&token=440cc54e-63da-4e53-b855-a4d016903592",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fyo-vs-yo.png?alt=media&token=9867ac66-c286-44d3-a81d-87d664bd166a",
     },
     {
       id: 6,
@@ -157,7 +157,7 @@ const pressArticles: PressDomainModel = {
       externalLink: "",
       type: PressTypeEnum.ARTICLE,
       pdfPath: IndexPdfEnum.THIRD,
-      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Farticle-3.png?alt=media&token=d67ddfe3-fdbb-493c-955d-d42bdc5f8fd0",
+      imagePath: "https://firebasestorage.googleapis.com/v0/b/abes-vita.appspot.com/o/luciano%2Fcomo-actuamos-ganamos-o-perdemos.png?alt=media&token=203711f0-13bf-4190-9a87-86a9cae90128",
     },
   ],
 };

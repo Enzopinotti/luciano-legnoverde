@@ -13,7 +13,7 @@ const ContactHome = () => {
       <div className='contact_container'>
         <h3 className="title">Trabajemos <br />juntos</h3>
         <p className="description">
-          Pongámonos en contacto para evaluar en conjunto cómo alcanzar tus metas.
+          Ponete en contacto para evaluar en conjunto cómo alcanzar tus metas.
         </p>
         <Link to={'/contacto'}>
           <motion.button

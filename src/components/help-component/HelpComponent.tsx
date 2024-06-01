@@ -13,7 +13,7 @@ const HelpComponent = () => {
     <div className='help_container'>
       <h3 className="title">Trabajemos juntos</h3>
       <p className="description">
-        Pongámonos en contacto para evaluar en conjunto cómo alcanzar tus metas.
+        Ponete en contacto para evaluar en conjunto cómo alcanzar tus metas.
       </p>
       <Link to={'/contacto'}>
         <motion.button

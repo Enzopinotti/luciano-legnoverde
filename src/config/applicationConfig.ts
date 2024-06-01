@@ -6,7 +6,7 @@ export const appConfig = {
   NUMBER_PHONE_WPS: '2215419000',
   MAIL_ADDRESS: 'llegnoverde@gmail.com',
   LINKEDIN_URL: 'https://ar.linkedin.com/in/lucianolegnoverde',
-  FACEBOOK_URL: 'https://www.facebook.com/luciano.legnoverde',
+  FACEBOOK_URL: 'https://www.facebook.com/lucianolegnoverdeok',
   INSTAGRAM_URL: 'https://www.instagram.com/lucianolegnoverde/',
   YOUTUBE_URL: 'https://www.youtube.com/@lucianolegnoverde6858',
   PDF_LINKS: {

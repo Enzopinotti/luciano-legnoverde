@@ -17,12 +17,18 @@ import arrowContactImage from "../../assets/images/contact/arrow_contact.svg";
 
 import { MdOutlineEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa6";
-import { isEmailValid, isFullnameValid, isMessageValid, isPhoneValid, isSubjectValid } from "../../utils/Validators";
+import {
+  isEmailValid,
+  // isFullnameValid,
+  isMessageValid,
+  isPhoneValid,
+  isSubjectValid
+} from "../../utils/Validators";
 
 
 const ContactContainer = () => {
   const [valueForm, setValueFrom] = useState({
-    full_name: '',
+    // full_name: '',
     email: '',
     phone: '',
     subject: '',
@@ -30,7 +36,7 @@ const ContactContainer = () => {
   });
 
   const [errors, setErrors] = useState({
-    full_name: '',
+    // full_name: '',
     email: '',
     phone: '',
     subject: '',
@@ -43,9 +49,9 @@ const ContactContainer = () => {
     setValueFrom({ ...value, [name]: trimmedValue });
 
     switch (name) {
-      case 'full_name':
-        setErrors({ ...errors, [name]: isFullnameValid(trimmedValue).errorMessage });
-        break;
+      // case 'full_name':
+      //   setErrors({ ...errors, [name]: isFullnameValid(trimmedValue).errorMessage });
+      //   break;
       case 'email':
         setErrors({ ...errors, [name]: isEmailValid(trimmedValue).errorMessage });
         break;
@@ -65,7 +71,8 @@ const ContactContainer = () => {
   
   const handleSubmit = (e:any) => {
     e.preventDefault();
-    if (valueForm.full_name !== '' && valueForm.email !== '' && valueForm.phone !== '' && valueForm.subject !== '' && valueForm.message !== '') {
+    // valueForm.full_name !== '' &&
+    if (valueForm.email !== '' && valueForm.phone !== '' && valueForm.subject !== '' && valueForm.message !== '') {
       emailjs
         .sendForm(
           appConfig.EMAIL_API.SERVICE_ID,
@@ -93,7 +100,7 @@ const ContactContainer = () => {
           <h1 className="title_global">Enviame tu consulta</h1>
           <p>
             Cada situación y objetivo financiero son únicos. <br />
-            Póngase en contacto para evaluar en conjunto cómo alcanzar sus metas.
+            Ponete en contacto para evaluar en conjunto cómo alcanzar tus metas.
           </p>
         </div>
         <div className="form_container">
@@ -109,7 +116,7 @@ const ContactContainer = () => {
                 minLength={5}
                 maxLength={35}
               />
-              {errors.full_name && <span className="error">{errors.full_name}</span>}
+              {/* {errors.full_name && <span className="error">{errors.full_name}</span>} */}
             </div>
             <div className="form-input">
               <label htmlFor="email">Email</label>
