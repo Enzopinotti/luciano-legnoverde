@@ -26,6 +26,10 @@
       font-style: italic;
       font-weight: 700;
       text-transform: uppercase;
+
+      br {
+        display: none;
+      }
     }
     .description {
       margin-top: 24px;
@@ -83,6 +87,11 @@
     background-position: center;
     background-size: cover;
     .contact_container {
+      .title {
+        br {
+          display: block;
+        }
+      }
       .flex-container {
         flex-direction: column;
         align-items: flex-start;

@@ -20,9 +20,9 @@ const PressContainer = () => {
         <img src={arrowPressImage} alt="arrow" className="arrow_press_top" />
         <img src={arrowPressDownImage} alt="arrow" className="arrow_press_down" />
         <div className="press_container">
-          <SliderPress pressDetail={pressInterview} />
+          <SliderPress pressDetail={pressInterview} showTitle={true} />
           {/* <SliderPress pressDetail={pressNotes} /> */}
-          <SliderPress pressDetail={pressArticles} />
+          <SliderPress pressDetail={pressArticles}  showTitle={true} />
         </div>
         <HelpComponent />
       </div>

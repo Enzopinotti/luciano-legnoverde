@@ -14,7 +14,7 @@ import { IndexPdfEnum, PressTypeEnum } from '../../../utils/enum';
 import { appConfig } from '../../../config/applicationConfig';
 import { toast } from 'react-toastify';
 
-const SliderPress = ({ pressDetail } : { pressDetail: PressDomainModel }) => {
+const SliderPress = ({ pressDetail, showTitle } : { pressDetail: PressDomainModel, showTitle: boolean }) => {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [selectedVideoUrl, setSelectedVideoUrl] = useState<string>("");
 
@@ -49,7 +49,7 @@ const SliderPress = ({ pressDetail } : { pressDetail: PressDomainModel }) => {
     <>
       <div id='swiper_slide_press'>
         <div className="header_press">
-          <h2>{pressDetail.title}</h2>
+          {showTitle && <h3>{pressDetail.title}</h3>}
         </div>
         <div className="swiper_container-press">
           <Swiper 

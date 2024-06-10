@@ -55,7 +55,7 @@ const PressHome = () => {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <SliderPress pressDetail={pressInterview} />
+                  <SliderPress pressDetail={pressInterview} showTitle={false} />
                 </motion.div>
               </>
             )}
@@ -66,7 +66,7 @@ const PressHome = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <SliderPress pressDetail={pressArticles} />
+                <SliderPress pressDetail={pressArticles} showTitle={false} />
               </motion.div>
             )}
           </div>
