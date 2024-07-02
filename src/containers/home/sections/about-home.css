@@ -1,0 +1,112 @@
+#about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#about .about_container {
+  width: 100%;
+  padding: 0 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .about_container .card {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 120px 0;
+  box-shadow: 0px 0px 100px 0px rgba(16, 20, 37, 0.2);
+  z-index: 2;
+}
+#about .about_container .card .luciano_about-img {
+  width: 519px;
+  height: 717px;
+}
+#about .about_container .card .card_description {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 64px 88px 64px 64px;
+  gap: 64px 0;
+}
+#about .about_container .card .card_description .subtitle {
+  padding: 8px 24px;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: var(--bg-color-main);
+  color: var(--text-white);
+}
+#about .about_container .card .card_description ul {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+#about .about_container .card .card_description ul li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0 16px;
+}
+#about .about_container .card .card_description ul li .icon {
+  font-size: 24px;
+  margin-top: 4px;
+}
+#about .about_container .card .card_description ul li p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+#about .about_container .card .card_description ul li p b {
+  font-weight: 600;
+}
+#about .about_container .absolute_arrow-section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transform: translate(0, -20%);
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1028px) {
+  #about .about_container .card {
+    background: var(--text-white);
+    z-index: 3;
+    position: relative;
+    flex-direction: column;
+    margin: 120px 0;
+  }
+  #about .about_container .card .luciano_about-img {
+    order: 2;
+    width: auto;
+    height: auto;
+  }
+  #about .about_container .card .card_description {
+    order: 1;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  #about .about_container .card .card_description .about_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: left;
+    flex-direction: column;
+  }
+  #about .about_container .card .card_description .about_text ul li p {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=about-home.css.map */

@@ -1,0 +1,100 @@
+#navigation_main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+#navigation_main .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 80px;
+}
+#navigation_main .navbar .logo {
+  display: flex;
+  align-items: center;
+}
+#navigation_main .navbar .logo img {
+  width: 200px;
+  pointer-events: none;
+}
+#navigation_main .navbar .items_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+#navigation_main .navbar .items_list li .text {
+  cursor: pointer;
+  color: var(--text-main);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+#navigation_main .navbar .items_list li .text::after {
+  content: "";
+  position: absolute;
+  background: var(--text-lblue);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+#navigation_main .navbar .items_list li .text:hover::after {
+  width: 100%;
+}
+#navigation_main .navbar .icon_menu {
+  font-size: 50px;
+}
+#navigation_main .menu_reponsive_navigation {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #navigation_main {
+    width: 100%;
+    z-index: 99999 !important;
+  }
+  #navigation_main .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+  }
+  #navigation_main .menu_reponsive_navigation {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #navigation_main .menu_reponsive_navigation .icon_close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: var(--text-white);
+  }
+  #navigation_main .menu_reponsive_navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  #navigation_main .menu_reponsive_navigation ul li a {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--text-white);
+    font-weight: 600;
+  }
+}/*# sourceMappingURL=navbar.css.map */

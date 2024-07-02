@@ -1,0 +1,85 @@
+#planner_card-component {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+#planner_card-component .card_planner {
+  display: flex;
+  min-height: 350px;
+  max-width: 435px;
+  padding: 56px 24px 48px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  position: relative;
+  border-bottom: 8px solid var(--lucianolegnoverde-com-ar-cyprus, #19223D);
+  background: var(--lucianolegnoverde-com-ar-nero, #FBFFFE);
+  /* shadow */
+  box-shadow: 0px 0px 100px 0px rgba(16, 20, 37, 0.2);
+  transition: 0.5s;
+}
+#planner_card-component .card_planner .absolute_count-num {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--lucianolegnoverde-com-ar-blue, #101425);
+  color: var(--text-white);
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
+#planner_card-component .card_planner .title_card {
+  color: var(--lucianolegnoverde-com-ar-blue, #101425);
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#planner_card-component .card_planner .items_card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
+#planner_card-component .card_planner .items_card li span {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--lucianolegnoverde-com-ar-cyprus, #19223D);
+  gap: 16px;
+}
+#planner_card-component .card_planner .items_card li span p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+#planner_card-component .card_planner .items_card li span .icon {
+  margin-top: 4px;
+  font-size: 22px;
+}
+#planner_card-component .card_planner:hover {
+  box-shadow: 0px 0px 100px 0px rgba(16, 20, 37, 0.4);
+}
+
+@media screen and (max-width: 1024px) {
+  #planner_card-component {
+    flex-direction: column;
+    gap: 44px;
+  }
+  #planner_card-component .card_planner {
+    width: 100%;
+  }
+}/*# sourceMappingURL=planner_card-component.css.map */

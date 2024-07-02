@@ -1,0 +1,196 @@
+#home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--text-white);
+  z-index: 2;
+  position: relative;
+}
+#home .presentation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 4%;
+  margin-top: 88px;
+}
+#home .presentation .domain_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 120px;
+}
+#home .presentation .domain_text .title {
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  color: var(--bg-color-main);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#home .presentation .domain_text .subtitle {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 24px;
+  display: flex;
+  color: var(--text-white);
+  background: var(--bg-color-main);
+  text-align: center;
+  font-size: 64px;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#home .presentation .domain_text .description {
+  margin: 48px 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  position: relative;
+  z-index: 2;
+}
+#home .presentation .domain_text .social_links {
+  position: relative;
+}
+#home .presentation .domain_text .social_links .follow {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 98px;
+}
+#home .presentation .domain_text .social_links .follow p {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 32px; /* 160% */
+  text-transform: uppercase;
+}
+#home .presentation .domain_text .social_links .follow .social_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid var(--bg-color-main);
+  padding: 12px;
+}
+#home .presentation .domain_text .social_links .line_social_links {
+  position: absolute;
+  width: 475px;
+  margin-top: 24px;
+  left: -7%;
+  height: 2px;
+  background: var(--bg-color-main);
+  opacity: 0.5;
+}
+#home .presentation .image_luciano {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  right: 10%;
+}
+#home .presentation .image_luciano img {
+  max-width: 521px;
+  max-height: 677px;
+}
+#home .workout {
+  width: 100%;
+  background: var(--bg-color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 80px;
+  gap: 240px;
+}
+#home .workout .workout_item {
+  display: flex;
+  gap: 16px;
+  color: var(--text-white);
+  align-items: flex-start;
+  justify-content: center;
+}
+#home .workout .workout_item span {
+  cursor: default;
+}
+#home .workout .workout_item span .bold_text {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
+#home .workout .workout_item span .light_text {
+  text-wrap: nowrap;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+#home .textura {
+  pointer-events: none;
+  z-index: -1;
+  position: absolute;
+  top: -115px;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1317px) {
+  #home .presentation .image_luciano {
+    right: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #home .presentation {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  #home .presentation .domain_text .subtitle {
+    text-align: left;
+    font-size: 40px;
+  }
+  #home .presentation .domain_text .social_links .follow {
+    gap: 20px;
+  }
+  #home .presentation .domain_text .social_links .follow p {
+    font-size: 17px;
+  }
+  #home .presentation .domain_text .social_links .follow .social_link {
+    padding: 7px;
+  }
+  #home .presentation .domain_text .social_links .line_social_links {
+    width: 110% !important;
+  }
+  #home .presentation .domain_text .main-button {
+    width: 100% !important;
+  }
+  #home .presentation .image_luciano {
+    width: 100%;
+    position: relative;
+  }
+  #home .presentation .image_luciano img {
+    max-width: 90%;
+    max-height: auto;
+  }
+  #home .textura {
+    top: -113px;
+    width: 100%;
+    height: calc(100% + 113px);
+  }
+}/*# sourceMappingURL=banner-home.css.map */

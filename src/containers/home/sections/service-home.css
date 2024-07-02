@@ -1,0 +1,112 @@
+#services {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#services .services_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4%;
+}
+#services .services_container .title_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px 0;
+  margin-bottom: 64px;
+}
+#services .services_container .title_section .subtitle {
+  padding: 8px 24px;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: var(--bg-color-main);
+  color: var(--text-white);
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#services .services_container .title_section .description {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+}
+#services .services_container .card_sections {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  z-index: 2;
+}
+#services .services_container .card_sections .card {
+  box-shadow: 0px 0px 100px 0px rgba(16, 20, 37, 0.2);
+  padding: 48px 24px;
+  width: 100%;
+  max-width: 435px;
+  background: var(--text-white);
+  border-bottom: 8px solid var(--lucianolegnoverde-com-ar-cyprus, #19223D);
+}
+#services .services_container .card_sections .card .title_card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+#services .services_container .card_sections .card .title_card h3 {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#services .services_container .card_sections .card .description h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 16px 0;
+}
+#services .services_container .card_sections .card .description ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#services .services_container .card_sections .card .description ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+#services .services_container .card_sections .card .description ul li span {
+  font-size: 22px;
+  margin-top: 4px;
+}
+#services .services_container .card_sections .card .description ul li p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+}
+@media screen and (max-width: 1370px) {
+  #services .services_container .card_sections .card .description h5 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  #services .services_container .title_section .description br {
+    display: none;
+  }
+  #services .services_container .card_sections {
+    flex-direction: column;
+  }
+  #services .services_container .card_sections .card .description h5 {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=service-home.css.map */

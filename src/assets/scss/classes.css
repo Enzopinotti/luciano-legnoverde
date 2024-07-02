@@ -1,0 +1,138 @@
+:root {
+  --bg-color-main: #101425;
+  --bg-color-secondary: #19223D;
+  --bg-button: #0D688D;
+  --text-white: #FBFFFE;
+  --text-main: #101425;
+  --text-lblue: #0D688D;
+  --navbar-height: 88px;
+}
+
+.main-button {
+  border-radius: 12px;
+  background: var(--bg-button);
+  color: var(--text-white);
+  display: flex;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: background 0.3s ease-in-out;
+}
+.main-button:hover {
+  background: var(--bg-color-main);
+}
+.main-button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.main_container {
+  width: 100%;
+  padding: 0 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fit-content {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.swiper-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 0 32px;
+}
+.swiper-nav-btn button {
+  outline: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-button-prev {
+  display: none;
+}
+
+.container_intro_section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 128px;
+  gap: 40px;
+}
+.container_intro_section .title_global {
+  padding: 8px 24px;
+  color: var(--text-white, #FBFFFE);
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  background: var(--bg-color-main, #101425);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container_intro_section p {
+  color: var(--bg-color-main, #19223D);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-bottom: 80px;
+}
+.container_intro_section p b {
+  color: var(--bg-color-main, #19223D);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.flex-between {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_wsp-component {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (max-width: 1024px) {
+  p br {
+    display: none !important;
+  }
+}/*# sourceMappingURL=classes.css.map */

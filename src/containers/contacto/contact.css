@@ -1,0 +1,177 @@
+#contact_view {
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+}
+#contact_view .container_intro_section {
+  margin-top: 120px !important;
+}
+#contact_view .container_intro_section p {
+  margin-bottom: 64px !important;
+}
+#contact_view .form_container {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+#contact_view .form_container .form_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+#contact_view .form_container .form_contact .form-input {
+  width: 100%;
+  max-width: 850px;
+  min-width: 322px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
+}
+#contact_view .form_container .form_contact .form-input label {
+  color: var(--bg-color-main, #19223d);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.485px;
+}
+#contact_view .form_container .form_contact .form-input input {
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  border: 0.5px solid var(--bg-color-main, #101425);
+  padding: 12px;
+  font-size: 16px;
+}
+#contact_view .form_container .form_contact .form-input textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  min-height: 250px;
+  border: 0.5px solid var(--bg-color-main, #101425);
+  border-radius: 12px;
+  padding: 12px;
+}
+#contact_view .form_container .form_contact .form-input .error {
+  color: red;
+  pointer-events: none;
+  font-size: 14px;
+}
+#contact_view .form_container .form_contact .flex-form_content {
+  width: 100%;
+  max-width: 850px;
+  min-width: 322px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  #contact_view .form_container .form_contact .flex-form_content {
+    flex-direction: column;
+  }
+}
+#contact_view .form_container button {
+  margin-bottom: 70px;
+}
+#contact_view .contact_data {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  margin-bottom: 120px;
+  gap: 128px;
+}
+#contact_view .contact_data .data {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+  justify-content: space-between;
+}
+#contact_view .contact_data .data h3 {
+  color: var(--bg-color-main, #19223D);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+#contact_view .contact_data .data ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+#contact_view .contact_data .data ul li {
+  display: flex;
+}
+#contact_view .contact_data .data ul li a {
+  color: var(--bg-color-main);
+  text-decoration: none;
+  border-radius: 100px;
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--lucianolegnoverde-com-ar-cyprus, #19223d);
+}
+#contact_view .contact_data .data .line {
+  position: absolute;
+  left: -5%;
+  bottom: -35px;
+  width: 35%;
+  height: 1px;
+  background: var(--bg-color-main);
+  opacity: 0.5;
+}
+#contact_view .contact_data .links_luciano {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 48px;
+}
+#contact_view .contact_data .links_luciano > .rrss {
+  display: flex;
+}
+#contact_view .contact_data .links_luciano > .rrss a, #contact_view .contact_data .links_luciano > .rrss span {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-color-main, #19223D);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  cursor: pointer;
+}
+#contact_view .contact_data .links_luciano > .rrss a .icon, #contact_view .contact_data .links_luciano > .rrss span .icon {
+  color: var(--bg-color-main);
+  font-size: 32px;
+}
+#contact_view .arrow_contact {
+  position: absolute;
+  bottom: -15%;
+  right: -30px;
+  max-width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0 !important;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+  #contact_view .contact_data {
+    flex-direction: column;
+  }
+  #contact_view .contact_data .data {
+    justify-content: flex-start;
+    position: relative;
+  }
+  #contact_view .contact_data .data .line {
+    width: 90%;
+  }
+}/*# sourceMappingURL=contact.css.map */
